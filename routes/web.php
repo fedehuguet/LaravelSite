@@ -1,4 +1,4 @@
 <?php
 
 Route::get('/', 'PostsController@index');
-#Route::get('/tasks/{task}', 'TasksController@show');
+Route::get('/posts/{task}', 'PostsController@show');
