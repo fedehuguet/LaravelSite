@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,7 +28,12 @@
     </div>
 
     <div class="container">
-      @yield ('content')
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+          @yield ('content')
+        </div>
+        @include('layouts.sidebar')
+      </div>
     </div>
 
     @include('layouts.footer')
